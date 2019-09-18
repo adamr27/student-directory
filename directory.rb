@@ -1,16 +1,16 @@
 
 students = [
-  {name: "Dr. Hannibal Lecter", cohort: :november, hobbies: "sport", cob: :uk},
-  {name: "Darth Vader", cohort: :november, hobbies: "racing", cob: :uk},
-  {name: "Nurse Ratched", cohort: :november,hobbies: "drinking", cob: :uk},
-  {name: "Michael Corleone", cohort: :november, hobbies: "sport", cob: :uk},
-  {name: "Alex DeLarge", cohort: :november, hobbies: "racing", cob: :uk},
-  {name: "The Wicked Witch of the West", cohort: :november, hobbies: "gaming" , cob: :uk},
-  {name: "Terminator", cohort: :november, hobbies: "gaming" , cob: :uk},
-  {name: "Freddy Krueger", cohort: :november, hobbies: "sport", cob: :uk},
-  {name: "The Joker", cohort: :november, hobbies: "gaming", cob: :uk },
-  {name: "Joffrey Baratheon", cohort: :november, hobbies: "gaming", cob: :uk },
-  {name: "Norman Bates", cohort: :november, hobbies: "sport", cob: :uk}
+  {name: "Dr. Hannibal Lecter", cohort: "november", hobbies: "sport", cob: :uk},
+  {name: "Darth Vader", cohort: "november", hobbies: "racing", cob: :uk},
+  {name: "Nurse Ratched", cohort: "november",hobbies: "drinking", cob: :uk},
+  {name: "Michael Corleone", cohort: "november", hobbies: "sport", cob: :uk},
+  {name: "Alex DeLarge", cohort: "november", hobbies: "racing", cob: :uk},
+  {name: "The Wicked Witch of the West", cohort: "november", hobbies: "gaming" , cob: :uk},
+  {name: "Terminator", cohort: "november", hobbies: "gaming" , cob: :uk},
+  {name: "Freddy Krueger", cohort: "november", hobbies: "sport", cob: :uk},
+  {name: "The Joker", cohort: "november", hobbies: "gaming", cob: :uk },
+  {name: "Joffrey Baratheon", cohort: "november", hobbies: "gaming", cob: :uk },
+  {name: "Norman Bates", cohort: "november", hobbies: "sport", cob: :uk}
 ]
 
 # and then print them
@@ -22,7 +22,7 @@ end
 def print(students)
   i = 0
   while i < students.length
-    puts "#{students[i][:name]} #{students[i][:cohort]} cohort, \n their hobby is #{students[i][:hobbies]} and there country of birth is #{students[i][:cob]}"
+    puts "\n#{students[i][:name].center(30)}", "#{students[i][:cohort]} cohort ".center(30), "their hobby is #{students[i][:hobbies]}".center(30) ,"and there country of birth is #{students[i][:cob]}".center(30)
     i = i + 1
   end
 end
